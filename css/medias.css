@@ -1,0 +1,95 @@
+/*Medias com tamanho mínimo de 541px*/
+@media screen and (min-width: 541px) {
+    /*Header | Cabeçalho*/
+    header section.cabecalho{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    /*Banner | formulário*/
+    fieldset.mais-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    fieldset.mais-info div,
+    fieldset.mais-info section{
+        width: calc((100% / 2) - 7px);
+    }
+    .info-adicional section.prefencia-do-quarto div,
+    .info-adicional section.escolha-cama div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .info-adicional label{
+        margin-right: 40px;
+    }
+    .info-adicional input,
+    .info-adicional label{
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    /*Main | ofertas*/
+    h2:first-child{
+        padding: 15px 0 10px;
+        font-weight: 500;
+    }
+    .fotos-fundo div{
+        height: 350px;
+    }
+    .fotos-fundo div p{
+        background-color: #0000009a;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+    }
+    /*Footer*/
+    footer .rodape{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    } 
+}
+
+
+/*Medias com tamanho de no mínimo 769px*/
+@media screen and (min-width: 769px) {
+    /*Banner | formulário*/
+    .formulario form button{
+        width: auto;
+    }
+    /*Main | ofertas*/
+    #ofertas div.fotos-fundo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .fotos-fundo div.rj,
+    .fotos-fundo div.outras-4-img{
+        width: calc(50% - 10px);
+    }
+    .fotos-fundo div.outras-4-img{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .outras-4-img div{
+        width: calc(50% - 7px);
+        height: 170px;
+    }
+    /*Main | promo*/
+    #promo .imagens .img-conteudo{
+        width: calc(50% - 10px);
+    }
+    .img-conteudo img{
+        width: 100%;
+    }
+}

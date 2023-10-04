@@ -1,0 +1,245 @@
+/*
+Mobile First
+Estilo geral para todas as telas com foco em telas de celulares menores que 540px
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+header, main, footer{
+    margin: 0 auto;
+    max-width: 1366px;
+    box-shadow: 0 5px 10px #00000094 ;
+}
+.tam-max{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/*Header | Cabeçalho*/
+header{
+    width: 100%;
+    padding: 10px 20px;
+    height: 55px;
+    background-color: white;
+}
+header section.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cabecalho img{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.cabecalho h1{
+    font-weight: normal;
+    color: #5D15D1;
+    font-size: 24px;
+}
+/*Main | banner*/
+main section.banner{
+    width: 100%;
+    background: #00000065 url(../img/banner/bahia.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 30px 20px 20px;
+}
+.banner .formulario{
+    background-color: white;
+    border-radius: 0 0 5px 10px;
+    box-shadow: 0 5px 10px #000000c9;
+}
+.banner section.formulario div.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #5D15D1;
+    color: white;
+    text-align: center;
+}
+.formulario .titulo img{
+    margin-right: 10px;
+    padding: 5px 0;
+    width: 20px;
+    transform: rotate(-45deg);/*Rotaciona um elemnto*/
+}
+.formulario .titulo h2{
+    font-size: 14px;
+}
+.formulario form{
+    padding: 30px 20px;
+}
+.formulario form h3{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+.formulario form label{
+    font-size: 16px;
+}
+.formulario form fieldset{
+    padding: 10px 0px;
+    border: none;
+}
+.formulario form .dados-pessoais input,
+.mais-info input, select{
+    width: 100%;
+    margin: 10px 0;
+    padding:7px 10px;
+    border: 1.3px solid #000000b0;
+    border-radius: 4px;
+}
+.info-adicional section p{
+    padding-bottom: 10px;
+}
+.info-adicional input{
+    margin: 0px 3px 35px 0;
+    width: 15px;
+}
+.formulario form button{ 
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    padding: 7px 10px;
+    margin-top: 12px;
+    border: none;
+    color: white;
+    background-color: #5D15D1;
+    border-radius: 4px;
+}
+/*Main | ofertas*/
+main{
+    background-color: #EAEAEA;
+    padding-bottom: 30px;
+}
+main #ofertas,
+main #promo{
+    padding: 20px 20px 0;
+}
+h2:first-child{
+    padding: 15px 0 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+main #ofertas p:nth-child(2){
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+#ofertas div.fotos-fundo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fotos-fundo div{
+    height: 250px;
+}
+.fotos-fundo div.rj,
+div.outras-4-img div{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.fotos-fundo div.outras-4-img{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fotos-fundo div p{
+    background-color: #0000009a;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+}
+.fotos-fundo div.rj{
+    background: url(../img/ofertas/rio.jpg) no-repeat center center;
+    background-size: cover;
+}
+.fotos-fundo div.manaus{
+    background: url(../img/ofertas/manaus.jpg) no-repeat center;
+    background-size: cover;
+}
+.fotos-fundo div.rio-de-jan{
+    background: url(../img/ofertas/niteroi.jpg) no-repeat center;
+    background-size: cover;
+}
+.fotos-fundo div.sp{
+    background: url(../img/ofertas/saopaulo.jpg) no-repeat center;
+    background-size: cover;
+}
+.fotos-fundo div.maranhao{
+    background: url(../img/ofertas/maranhao.jpg) no-repeat center;
+    background-size: cover;
+}
+/*Main | Promo*/
+#promo div.imagens{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.imagens .img-conteudo{
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+.img-conteudo img{
+    width: 100%;
+}
+.img-conteudo .conteudo{
+    text-align: left;
+    height: 100px;
+    padding:0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.conteudo p{
+    font-weight: bold;
+    font-size: 16px;
+}
+.conteudo span{
+    font-size: 15px;
+}
+/*Footer*/
+footer{
+    background-color: #5D15D1;
+    padding: 10px;
+    color: white;
+}
+footer .rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.rodape h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+.rodape div.contatos,
+.rodape div.redes-sociais{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.rodape div div{
+    display: flex;
+    align-items: center;
+}
+.rodape div div img{
+    width: 18px;
+    margin-right: 10px;
+}
+.rodape div div p{
+    font-size: 14px;
+}
